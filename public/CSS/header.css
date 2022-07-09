@@ -1,0 +1,92 @@
+#nav {
+    background-color: var(--color-black);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#nav ul li {
+    padding: 1rem;
+    margin: .5em;
+}
+
+#btn-menu {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    #nav {
+        justify-content: end;
+        padding: 1rem;
+    }
+
+    #menu {
+        display: block;
+        background-color: var(--color-black);
+        position: absolute;
+        top: 48px;  /* ESSE VALOR DEVE SER MUDADO DEPENDENDO DO TAMANHO DA LOGO */
+        right: 0;
+        width: 0;
+        z-index: 1000;
+        transition: all .5s;
+        visibility: hidden;
+        overflow: hidden;
+    }
+    
+    #nav.active #menu {
+        width: 40%;
+        height: max-content;
+        visibility: visible;
+    }
+    
+    #menu li {
+        padding: 1rem;
+        margin: 0 .5em;
+        color: white;
+    }
+
+    #btn-menu { 
+        display: flex;
+        background-color: transparent;
+        border: none;
+    }
+
+    #hambuger{
+        border-top: 2px solid #F9C949;
+        display: block;
+        width: 20px;
+    }
+
+    #hambuger::after, 
+    #hambuger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: #F9C949;
+        margin-top: 5px;
+        transition: all .3s;
+        position: relative;
+    }
+
+    #nav.active #hambuger {
+        border-top-color: transparent;
+    }
+    
+    
+    #nav.active #hambuger::after {
+        transform: rotate(135deg);
+        top: -7px;
+    }
+    
+    #nav.active #hambuger::before {
+        transform: rotate(-135deg);
+    }
+}
