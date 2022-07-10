@@ -17,6 +17,10 @@
     margin: .5em;
 }
 
+#nav ul li a {
+    color: white;
+}
+
 #btn-menu {
     display: none;
 }

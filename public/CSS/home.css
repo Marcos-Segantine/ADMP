@@ -2,6 +2,7 @@
 
 #carrosel {
     width: 100%;
+    position: relative;
 }
 
 .banner {
@@ -11,7 +12,8 @@
 .banner_visible {
     display: block;
     width: 100%;
-    height: 28rem;
+    height: 65vh;
+    max-height: 28rem;
 }
 
 .banner_visible img {
