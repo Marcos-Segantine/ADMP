@@ -82,3 +82,13 @@ button:hover .prev,
 button:hover .prev::after  {
     border-top-color: var(--color-gray);
 }
+
+.missionarias {
+    display: none;
+}
+
+@media (min-width: 1023px) {
+    .missionarias {
+        display: flex;
+    }
+}

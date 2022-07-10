@@ -7,8 +7,9 @@ body {
 
 :root {
     --color-black: #232323;
-    --color-gold: #F9C949;
+    --color-gold: #E6AE23;
     --color-gray: #708090;
+    --color-red: #8A0000;
 }
 
 a {
@@ -25,11 +26,14 @@ ul {
     font-weight: bold;
     font-size: 1.5rem;
     padding: 0 1rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 .title-section h2 {
     padding: 0 .7em;
-    border-left: solid 10px #F9C949;
+    border-left: solid 10px #E6AE23;
 }
 
 .text-md {
@@ -45,7 +49,7 @@ ul {
 .flex {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center
 }
 
 .space-section {
@@ -75,6 +79,33 @@ ul {
     height: 100%;
 }
 
+.button {
+    display: none;
+    background-color: var(--color-gold);
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+    font-size: .9rem;
+    align-items: center;
+    padding: 0 1.5em;
+    cursor: pointer;
+}   
+
+.button:hover {
+    background-color: var(--color-black);
+    color: var(--color-gold);
+}
+
+.button-mobile {
+    display: flex;
+    font-size: 1.1rem;
+    margin: 2em 0;
+    width: max-content;
+    padding: .3em 1.2em;
+    right: -20%;
+    position: relative;
+}
+
 @media (min-width: 767px) {
     .flex {
         flex-direction: row;
@@ -83,6 +114,14 @@ ul {
 
     .box-flex {
         width: 30%;
+    }
+
+    .button {
+        display: flex;
+    }
+
+    .button-mobile {
+        display: none;
     }
 }
 
