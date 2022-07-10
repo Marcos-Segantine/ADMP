@@ -7,6 +7,11 @@
 :root {
     --color-black: #232323;
     --color-gold: #F9C949;
+    --color-gray: #708090;
+}
+
+.space-section {
+    margin: 2rem 0;
 }
 
 a {
