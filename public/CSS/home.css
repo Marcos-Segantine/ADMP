@@ -69,14 +69,16 @@
 }
 
 button:hover .next,
-button:hover .next::after  {
+button:hover .next::after {
     border-top-color: var(--color-gray);
 }
 
 button:hover .prev,
-button:hover .prev::after  {
+button:hover .prev::after {
     border-top-color: var(--color-gray);
 }
+
+/* SEÇÕES */
 
 .missionarias {
     display: none;
@@ -97,7 +99,7 @@ button:hover .prev::after  {
     text-align: center;
 }
 
-.mais-da-igreja .box .img{
+.mais-da-igreja .box .img {
     width: 100%;
     border-radius: 25px;
     overflow: hidden;
@@ -110,11 +112,49 @@ button:hover .prev::after  {
     font-weight: bold;
 }
 
+.prog-semanal {
+    height: 30rem;
+    position: relative;
+}
+
+.info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 100%;
+}
+
+.info .title-section {
+    color: white;
+    justify-content: start;
+    margin-bottom: 4rem;
+}
+
+.info .title-section p {
+    display: none;
+    border-left: solid 1px white;
+    padding: 2em 2.5em;
+    margin-left: 2em;
+    font-size: .8rem;
+}
+
+.info .text-sm {
+    font-size: 1rem;
+    color: white;
+    margin: .8em 0 .8em 5%;
+}
+
+.info span {
+    color: var(--color-gold);
+    font-weight: bold;
+}
+
 @media (min-width: 767px) {
     .mais-da-igreja .box {
         width: 15%;
     }
-
 }
 
 @media (min-width: 1023px) {
@@ -126,4 +166,11 @@ button:hover .prev::after  {
         font-size: 1.3rem;
     }
 
+    .info .title-section p {
+        display: block;
+    }
+
+    .info .text-sm {
+        margin: .8em 0 .8em 170px;
+    }
 }
