@@ -30,7 +30,7 @@ img {
 .title-section {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     padding: 0 1em;
     margin-top: 5rem;
     display: flex;
@@ -94,7 +94,7 @@ img {
     transition: all .3s;
     font-size: .9rem;
     align-items: center;
-    padding: 0 1.5em;
+    padding: .5em 2em;
     cursor: pointer;
 }   
 
